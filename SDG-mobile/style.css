@@ -1,0 +1,67 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Style the accordion panel/content. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+/* Style the content text */
+.content-text {
+  text-align: center;
+  font-size: 12px;
+  padding: 25px 0px;
+}
+
+/* Style the materials content panel */
+.materials-content {
+  display: flex;
+  justify-content: center;
+}
+
+.material-details {
+  padding: 0 25px;
+}
+
+.material-percentage {
+  font-size: 45px;
+}
+
+.material-type {
+  font-size: 20px;
+}
+
+/* Adds the plus and minus sign to accordion tabs */
+.accordion:after {
+  content: "+";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-";
+}
